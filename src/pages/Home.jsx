@@ -1,15 +1,16 @@
+// src/pages/Home.jsx
 import { Link } from 'react-router-dom';
-import { subjects } from '../data/subjects';
+import { subjectsIndex } from '../data/subjects-index';
 
 export default function Home() {
   return (
     <section>
       <h1>Choose a subject</h1>
       <div className="grid">
-        {subjects.map((s) => (
+        {subjectsIndex.map((s) => (
           <Link key={s.slug} to={`/subject/${s.slug}`} className="card">
             <h3>{s.name}</h3>
-            <p>{s.questions.length} questions</p>
+            <p>Open to view questions</p>
           </Link>
         ))}
       </div>

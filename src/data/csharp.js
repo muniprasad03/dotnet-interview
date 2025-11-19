@@ -1,0 +1,219 @@
+// src/data/csharp.js
+export default {
+  slug: "csharp",
+  name: "C#",
+  questions: [
+    {
+      q: "What is C#?",
+      a: "C# is a modern, object-oriented programming language developed by Microsoft. It is part of the .NET framework and is used for developing Windows applications, web applications, and web services.",
+    },
+    {
+      q: "What are the main features of C#?",
+      a: "Simple and easy to learn, Object-oriented, Component-oriented, Type-safe, Interoperability, Scalable and updatable, Structured language, Rich library, Automatic garbage collection, Indexers and properties.",
+    },
+    {
+      q: "What is the difference between == and Equals() in C#?",
+      a: "== operator is used to compare reference identity, while Equals() compares contents. For value types, == compares values directly. For reference types, == checks if both references point to the same object in memory, whereas Equals() can be overridden to compare actual object data.",
+    },
+    {
+      q: "What is the difference between ref and out keywords?",
+      a: "Both ref and out are used to pass arguments by reference. ref requires that the variable be initialized before being passed. out does not require initialization before being passed, but it must be assigned a value before the method returns.",
+    },
+    {
+      q: "Explain async and await in C#.",
+      a: "async keyword is used to declare a method as asynchronous. await keyword is used to pause the execution of an async method until the awaited task completes.",
+    },
+    {
+      q: "What is a delegate in C#?",
+      a: "A delegate is a type that represents references to methods with a particular parameter list and return type. It is similar to function pointers in C/C++, but it is type-safe.",
+    },
+    {
+      q: "What is the difference between Func<>, Action<>, and Predicate<>?",
+      a: "Func<> is a delegate that returns a value. Action<> is a delegate that does not return a value. Predicate<> is a delegate that returns a boolean value and is used for conditions.",
+    },
+    {
+      q: "What is LINQ?",
+      a: "Language Integrated Query (LINQ) is a set of methods and syntax in C# that allows querying of collections in a concise and readable way.",
+    },
+    {
+      q: "What are generics in C#?",
+      a: "Generics allow you to define a class, method, delegate, or interface with a placeholder for the type of data it stores or uses. This provides type safety without compromising performance or code redundancy.",
+    },
+    {
+      q: "Explain the concept of extension methods.",
+      a: "Extension methods allow you to add methods to existing types without modifying the original type, creating a new derived type, or recompiling the original type. They are defined as static methods in a static class but are called as if they were instance methods on the extended type.",
+    },
+    {
+      q: "What is the difference between IEnumerable and IQueryable?",
+      a: "IEnumerable is used for in-memory collections and performs the query on the client side. IQueryable is used for out-of-memory collections (like databases) and performs the query on the server side.",
+    },
+    {
+      q: "What is the difference between Array and List<> in C#?",
+      a: "Array has a fixed size and cannot be resized. List<> is a dynamic array that can grow and shrink in size.",
+    },
+    {
+      q: "What is the purpose of using statement in C#?",
+      a: "The using statement ensures that IDisposable objects are disposed of properly. It helps manage resources such as file handles and database connections efficiently.",
+    },
+    {
+      q: "What is a nullable type in C#?",
+      a: "A nullable type can represent all the values of its underlying type plus an additional null value. Nullable types are instances of the System.Nullable struct.",
+    },
+    {
+      q: "Explain the concept of boxing and unboxing in C#.",
+      a: "Boxing converts a value type to a reference type (object), and unboxing converts the reference type back to the value type. Boxing is implicit, while unboxing requires explicit casting.",
+    },
+    {
+      q: "What is polymorphism in C#?",
+      a: "Polymorphism allows methods to behave differently based on the object they act upon. It can be achieved through method overriding and method overloading.",
+    },
+    {
+      q: "What are abstract classes in C#?",
+      a: "An abstract class cannot be instantiated and is intended to be inherited by other classes. It can contain abstract methods without implementation.",
+    },
+    {
+      q: "What is an interface in C#?",
+      a: "An interface defines a contract that implementing classes must adhere to. It can contain method, property, event, and indexer declarations, but no implementations.",
+    },
+    {
+      q: "Explain the difference between throw and throw ex in C#.",
+      a: "throw preserves the original stack trace of the exception, while throw ex resets the stack trace, making debugging harder.",
+    },
+    {
+      q: "What is dependency injection?",
+      a: "Dependency injection is a design pattern used to implement Inversion of Control (IoC), where the creation and binding of dependencies are managed externally rather than by the dependent class.",
+    },
+    {
+      q: "What is the difference between Task and Thread in C#?",
+      a: "Task represents an asynchronous operation and is part of the Task Parallel Library (TPL). Thread is a lower-level representation of a concurrent execution path.",
+    },
+    {
+      q: "What is the yield keyword used for in C#?",
+      a: "The yield keyword returns elements one at a time, allowing iteration without creating a temporary collection.",
+    },
+    {
+      q: "What is the difference between const and readonly?",
+      a: "const is a compile-time constant and must be initialized at declaration. readonly is a runtime constant and can be initialized in the declaration or constructor.",
+    },
+    {
+      q: "What is the purpose of the lock statement in C#?",
+      a: "The lock statement ensures that a block of code runs without interruption by other threads, preventing race conditions.",
+    },
+    {
+      q: "What is reflection in C#?",
+      a: "Reflection allows a program to inspect and interact with its own metadata at runtime, enabling dynamic type discovery and method invocation.",
+    },
+    {
+      q: "What is the difference between method overriding and method overloading?",
+      a: "Method overriding provides a specific implementation of a method defined in a base class in a derived class. Method overloading allows multiple methods with the same name but different signatures.",
+    },
+    {
+      q: "What is a property in C#?",
+      a: "A property provides a flexible mechanism to read, write, or compute the value of a private field using accessors.",
+    },
+    {
+      q: "Explain the difference between encapsulation and abstraction in C#.",
+      a: "Encapsulation bundles data and methods within a class and restricts direct access. Abstraction hides implementation details and exposes only essential features.",
+    },
+    {
+      q: "What is the difference between synchronous and asynchronous methods in C#?",
+      a: "Synchronous methods block the calling thread until completion. Asynchronous methods allow the calling thread to continue execution while the method runs in the background.",
+    },
+    {
+      q: "What is an event in C#?",
+      a: "An event is a message sent by an object to signal an action. Events use delegates and enable custom event handling.",
+    },
+    {
+      q: "Explain the difference between early binding and late binding in C#.",
+      a: "Early binding occurs at compile time, while late binding occurs at runtime using reflection.",
+    },
+    {
+      q: "What is the difference between a value type and a reference type in C#?",
+      a: "Value types store actual data on the stack. Reference types store a reference to data on the heap.",
+    },
+    {
+      q: "What is the IDisposable interface used for in C#?",
+      a: "IDisposable releases unmanaged resources like file handles or database connections using the Dispose() method.",
+    },
+    {
+      q: "What are partial classes in C#?",
+      a: "Partial classes allow splitting a class definition across multiple files, useful for large classes or separating auto-generated code.",
+    },
+    {
+      q: "What is the difference between an abstract class and an interface?",
+      a: "Abstract classes can have implementations; interfaces cannot. A class can implement multiple interfaces but inherit only one abstract class.",
+    },
+    {
+      q: "What is a sealed class in C#?",
+      a: "A sealed class cannot be inherited, preventing further extension.",
+    },
+    {
+      q: "Explain the concept of covariance and contravariance in C#.",
+      a: "Covariance allows using a more derived type; contravariance allows using a less derived type. Common in generics and delegates.",
+    },
+    {
+      q: "What is a lambda expression in C#?",
+      a: "A lambda expression is a concise way to represent an anonymous method, often used with delegates or LINQ.",
+    },
+    {
+      q: "What is the purpose of the dynamic keyword in C#?",
+      a: "dynamic bypasses compile-time type checking and resolves members at runtime, enabling late binding.",
+    },
+    {
+      q: "What is the difference between a stack and a heap in C#?",
+      a: "Stack stores value types and reference pointers; heap stores objects and reference types.",
+    },
+    {
+      q: "Explain the difference between Thread.Sleep and Task.Delay in C#.",
+      a: "Thread.Sleep blocks the current thread; Task.Delay creates a non-blocking delay allowing other tasks to run.",
+    },
+    {
+      q: "What is the purpose of the GC.Collect() method in C#?",
+      a: "GC.Collect() forces garbage collection, though it's generally better to let the GC manage memory automatically.",
+    },
+    {
+      q: "What is an iterator in C#?",
+      a: "An iterator uses yield return to return elements one at a time, enabling easy collection traversal.",
+    },
+    {
+      q: "What is the difference between abstract method and virtual method?",
+      a: "Abstract methods have no implementation and must be overridden; virtual methods have an implementation but can be overridden.",
+    },
+    {
+      q: "What is a static constructor in C#?",
+      a: "A static constructor initializes static members and runs automatically before any instance or static member is accessed.",
+    },
+    {
+      q: "What is the difference between a struct and a class in C#?",
+      a: "Structs are value types stored on the stack; classes are reference types stored on the heap.",
+    },
+    {
+      q: "Explain the purpose of the volatile keyword in C#.",
+      a: "volatile ensures a field is accessed directly from memory, preventing compiler optimizations that assume single-threaded access.",
+    },
+    {
+      q: "What is a destructor in C#?",
+      a: "A destructor cleans up unmanaged resources before an object is reclaimed by the garbage collector.",
+    },
+    {
+      q: "What is a namespace in C#?",
+      a: "A namespace organizes related classes, interfaces, and types, preventing naming conflicts.",
+    },
+    {
+      q: "What is the difference between a public, private, and protected constructor in C#?",
+      a: "Public constructors can be called from anywhere; private constructors restrict instantiation (e.g., singleton); protected constructors allow instantiation only by derived classes.",
+    },
+    {
+      q: "What is an anonymous type in C#?",
+      a: "An anonymous type encapsulates read-only properties without a named class, often used in LINQ queries.",
+    },
+    {
+      q: "What is a Tuple in C#?",
+      a: "A Tuple holds a fixed number of items of different types, useful for returning multiple values from a method.",
+    },
+    {
+      q: "What is the purpose of the default keyword in C#?",
+      a: "default returns the default value of a type, useful for initializing generics or resetting variables.",
+    },
+  ],
+};

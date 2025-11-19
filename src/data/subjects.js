@@ -1,3 +1,4 @@
+//subjects.js
 export const subjects = [
   {
     slug: 'csharp',
